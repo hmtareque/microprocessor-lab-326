@@ -1,0 +1,23 @@
+keyboard input
+
+mov ah, oh
+int 21h
+
+
+display 
+
+mov ah, 02h
+int 21h
+
+exit 
+
+mov ah, 4ch
+int 21h
+
+----------------------------------------
+
+1. input always taken in to AL
+2. print always in DL
+3. if use loop it always check CX
+4. if we write loop by default CX is decreased by 1
+5. if we use inc BX then we have to use loop X1 DEC BX

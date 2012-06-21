@@ -1,0 +1,13 @@
+.model small
+.code
+
+mov ax, 'a'
+mov dx, ax
+
+mov ah, 02h
+int 21h
+
+mov ah, 4ch
+int 21h
+end
+a
